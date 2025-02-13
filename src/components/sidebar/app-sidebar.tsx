@@ -66,8 +66,12 @@ const data = {
       items: [
         {
           title: "Charts & Graphs",
-          url: "#",
+          url: "/playground/charts",
         },
+        {
+          title: "Data Fetching",
+          url: "/playground/data-fetching-example",
+        }
       ],
     },
     {
@@ -77,11 +81,11 @@ const data = {
       items: [
         {
           title: "layout-0",
-          url: "/grid_layouts/layout_0",
+          url: "/grid-layouts/layout-0",
         },
         {
           title: "layout-1",
-          url: "/grid_layouts/layout_1",
+          url: "/grid-layouts/layout-1",
         }
       ],
     },

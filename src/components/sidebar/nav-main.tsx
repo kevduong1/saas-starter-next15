@@ -55,14 +55,21 @@ export function NavMain({
                 <>
                   <CollapsibleTrigger asChild>
                     <SidebarMenuButton asChild tooltip={item.title}>
-                      <Link href={item.url}>
+                      {item.url === "#" ? (
+                        <button className="flex items-center gap-2">
+                          <item.icon />
+                          <span>{item.title}</span>
+                        </button>
+                      ) : (
+                        <Link href={item.url}>
 
                           <item.icon />
                           <span>{item.title}</span>
                           <ChevronRight className={`ml-auto ${openItems.includes(item.title) ? 'rotate-90' : ''}`} />
                           <span className="sr-only">Toggle</span>
 
-                      </Link>
+                        </Link>
+                      )}
                     </SidebarMenuButton>
                   </CollapsibleTrigger>
                   <CollapsibleContent>
